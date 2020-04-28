@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terminal</title>
+    <link>/</link>
+    <description>Recent content on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Skalman CTF team</copyright>
+    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World</title>
+      <link>/posts/hello-world/</link>
+      <pubDate>Fri, 24 Apr 2020 16:05:42 +0200</pubDate>
+      
+      <guid>/posts/hello-world/</guid>
+      <description>Hello cruel Covid-19 riddled world. We are live on this Friday, ready to play some CTF this weekend! Stay tuned for write-ups, enjoy our (future) content and hack responsibly!
+Cheers, Skalman</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Hi, we are Skalman Skalman, Swedish for Shellman. Whats in the name? A tortoise, or a hacker popping shells? In our case; both!
+We are a group of security enthousiast, colleagues, friends and/or vague acquaintances. As we regularely participate in CTFs, it sounded like a good idea to share some of these CTFs and how we solved them right here.
+In addition, you might find a useful script or two on our Github.</description>
+    </item>
+    
+  </channel>
+</rss>
