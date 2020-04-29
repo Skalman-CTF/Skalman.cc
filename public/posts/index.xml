@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Terminal</title>
+    <title>Posts on Skalman</title>
     <link>/posts/</link>
-    <description>Recent content in Posts on Terminal</description>
+    <description>Recent content in Posts on Skalman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Skalman CTF team</copyright>
-    <lastBuildDate>Fri, 24 Apr 2020 16:05:42 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2020 17:19:53 +0200</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Houseplan CTF</title>
+      <link>/posts/houseplan-ctf/</link>
+      <pubDate>Wed, 29 Apr 2020 17:19:53 +0200</pubDate>
+      
+      <guid>/posts/houseplan-ctf/</guid>
+      <description>Houseplan CTF This was a crazy CTF, organized by Hack Club and hosted by RiceTeaCatPanda. Organized as we are, we never even realized who or what organized this CTF. But apparently Hack Club is the world largest network of high schoolers/students who are in for a game of &amp;lsquo;lets blow some shit up&amp;rsquo; (responsibly that is). Fun!
+CTF Time  Start: Friday 24-04-2020 21:00 (CET) End: Sunday 26-04-2020 21:00 (CET) Categories: Beginner, Crypto, Forensics, Misc, OSINT, Pwn, Reverse Engineering, Web  &amp;ldquo;Where is Elon?</description>
+    </item>
     
     <item>
       <title>Hello World</title>

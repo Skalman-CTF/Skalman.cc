@@ -214,6 +214,7 @@ ul,
 ol {
   margin-left: 30px;
   padding: 0;
+  margin-top: auto;
 
   li {
     position: relative;
@@ -225,7 +226,7 @@ ol {
 
   ul,
   ol {
-    margin-top: 20px;
+    margin-top: auto;
   }
 }
 
