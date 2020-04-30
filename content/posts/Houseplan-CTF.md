@@ -7,7 +7,7 @@ Author: "Skalman-Hugo"
 description: "This was a crazy CTF, organized by [Hack Club](https://hackclub.com) and hosted by [RiceTeaCatPanda](https://riceteacatpanda.wtf). Organized as we are, we never even realized who or what organized this CTF. But apparently Hack Club is the world largest network of high schoolers/students who are in for a game of 'lets blow some shit up' (responsibly that is). Fun!"
 toc: true
 ---
-## Houseplan CTF
+## Houseplant CTF
 This was a crazy CTF, organized by [Hack Club](https://hackclub.com) and hosted by [RiceTeaCatPanda](https://riceteacatpanda.wtf). Organized as we are, we never even realized who or what organized this CTF. But apparently Hack Club is the world largest network of high schoolers/students who are in for a game of 'lets blow some shit up' (responsibly that is). Fun!
 
 ### CTF Time
