@@ -1,5 +1,5 @@
 ---
-title: "Houseplan CTF"
+title: "Houseplant CTF"
 date: 2020-04-29T17:19:53+02:00
 draft: false
 cover: "/images/042020-Houseplant-CTF/Houseplant.png"
