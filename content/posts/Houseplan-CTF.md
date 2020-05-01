@@ -3,7 +3,7 @@ title: "Houseplant CTF"
 date: 2020-04-29T17:19:53+02:00
 draft: false
 cover: "/images/042020-Houseplant-CTF/Houseplant.png"
-Author: "Skalman-Hugo"
+Author: "Skalman-Hugo and Skalman-Jimmie"
 description: "This was a crazy CTF, organized by [Hack Club](https://hackclub.com) and hosted by [RiceTeaCatPanda](https://riceteacatpanda.wtf). Organized as we are, we never even realized who or what organized this CTF. But apparently Hack Club is the world largest network of high schoolers/students who are in for a game of 'lets blow some shit up' (responsibly that is). Fun!"
 toc: true
 ---
@@ -158,6 +158,56 @@ Challenge:
 
 (Whups, forgot to get the right screenshot. But try your best, and combine all of the above. I trust you can! :))
 
-### Excel
-To be done :)
+### Reverse Engineering - Fragile
+Can you help me move my stuff? This one's fragile!
 
+Challenge:
+We were provided with a Java file, printing "Acceess granted." if the correct flag is provided:
+
+```import java.util.*;
+
+public class fragile
+{
+    public static void main(String args[]) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter flag: ");
+        String userInput = scanner.next();
+        String input = userInput.substring("rtcp{".length(),userInput.length()-1);
+        if (check(input)) {
+            System.out.println("Access granted.");
+        } else {
+            System.out.println("Access denied!");
+        }
+    }
+    
+    public static boolean check(String input){
+        boolean h = false;
+        String flag = "h1_th3r3_1ts_m3";
+        String theflag = "";
+        if(input.length() != flag.length()){
+            return false;
+        }
+        for(int i = 0; i < flag.length(); i++){
+            theflag += (char)((int)(flag.charAt(i)) + (int)(input.charAt(i)));
+        }
+        return theflag.equals("ÐdØÓ§åÍaèÒÁ¡");
+    }
+}```
+
+Solution:
+Three variables are used: input, flag and theflag. The function "check" can be described as:
+
+`Every char in the "input" variable is added with the corresponding character in "flag" variable, if it equals ÐdØÓ§åÍaèÒÁ¡ ("theflag" variable) access will be granted`
+
+The final value of "theflag" and "flag" were converted to numbers via RapidTables:
+
+`theflag = 208 100 216 211 153 167 229 146 205 97 232 210 193 161 151`
+`flag = 104 49 95 116 104 51 114 51 95 49 116 115 95 109 51`
+
+"theflag" was then subtracted with "flag", this was done with Excel, and then converted to ASCII via RapidTables:
+
+![Reverse Engineering - Fragile Excel solution](/images/042020-Houseplant-CTF/fragile.png "Reverse Engineering - Fragile Excel solution")
+
+Flag:
+
+`rtcp{h3y_1ts_n0t_b4d}`
