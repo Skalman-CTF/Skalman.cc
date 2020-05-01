@@ -164,7 +164,8 @@ Can you help me move my stuff? This one's fragile!
 Challenge:
 We were provided with a Java file, printing "Acceess granted." if the correct flag is provided:
 
-```import java.util.*;
+```java
+import java.util.*;
 
 public class fragile
 {
