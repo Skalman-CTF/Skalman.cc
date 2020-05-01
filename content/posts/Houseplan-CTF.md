@@ -192,7 +192,8 @@ public class fragile
         }
         return theflag.equals("ÐdØÓ§åÍaèÒÁ¡");
     }
-}```
+}
+```
 
 Solution:
 Three variables are used: input, flag and theflag. The function "check" can be described as:
