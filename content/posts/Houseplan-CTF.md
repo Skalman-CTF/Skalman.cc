@@ -203,6 +203,7 @@ Three variables are used: input, flag and theflag. The function "check" can be d
 The final value of "theflag" and "flag" were converted to numbers via RapidTables:
 
 `theflag = 208 100 216 211 153 167 229 146 205 97 232 210 193 161 151`
+
 `flag = 104 49 95 116 104 51 114 51 95 49 116 115 95 109 51`
 
 "theflag" was then subtracted with "flag", this was done with Excel, and then converted to ASCII via RapidTables:
